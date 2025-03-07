@@ -12,8 +12,8 @@ synthetic_data = pd.DataFrame({
 
 
 synthetic_data["SCH_PSDISC_OOMOOS_BL_M"] = np.random.poisson(lam=5, size=num_schools)  
-synthetic_data["SCH_PSDISC_OOMOOS_WH_F"] = np.random.poisson(lam=3, size=num_schools)  
-synthetic_data["TOT_PSDISC"] = synthetic_data["SCH_PSDISC_OOMOOS_BL_M"] + synthetic_data["SCH_PSDISC_OOMOOS_WH_F"]
+synthetic_data["SCH_PSDISC_OOMOOS_WH_M"] = np.random.poisson(lam=3, size=num_schools)  
+synthetic_data["TOT_PSDISC"] = synthetic_data["SCH_PSDISC_OOMOOS_BL_M"] + synthetic_data["SCH_PSDISC_OOMOOS_WH_M"]
 
 
 mask = np.random.rand(num_schools) < 0.05 
